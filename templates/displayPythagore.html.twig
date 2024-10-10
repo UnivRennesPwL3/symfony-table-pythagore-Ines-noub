@@ -1,4 +1,21 @@
 {% extends 'base.html.twig' %}
 
-{% block content %} {{ htmlResponse }} {% endblock %}
+{% block title %}Symfony & table de pythagore{% endblock %}
 
+{% block stylesheets %}
+<style>
+    .impair {
+        background-color: #f6f8fa;
+    }
+    th, td {
+        border: 1px solid #ddd;
+        text-align: center;
+        padding: 5px;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+    <h1> NOUBI-SI KUISSEU INES GAETAN </h1>
+    {{ pythagore_table | raw }}
+{% endblock %}
